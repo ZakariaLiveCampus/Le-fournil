@@ -185,7 +185,7 @@ body.template-dark {
 .hero-banner {
     width: 100%;
     height: 80vh;
-    background-image: url('../img/556.jpg');
+    background-image: url('../img/hero-s.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -220,10 +220,68 @@ body.template-dark {
 
 @media screen and (min-width : 520px){
     .hero-banner{
-        background-image: url('../img/hero.png');
+        background-image: url('../img/hero-l.png');
         height: 100vh;
     }
 }
+
+
+/* PRESENTATION SECTION */
+.presentation {
+    margin-bottom: 1rem;
+}
+
+.presentation, .presentation-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-text {
+    margin-top: 1rem;
+    padding: 0;
+    text-align: justify;
+}
+
+.presentation-text-xl {
+    font-size: 3rem;
+    font-weight: bold;  
+}
+
+.presentation-text-highlight {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.presentation-ttl-sm, .presentation-txt-sm {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.presentation-txt-sm {
+    margin-top: 1rem;
+    padding: .5rem;
+    color: var(--light-grey);
+}
+
+@media screen and (min-width : 768px){
+    .presentation-text{
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem; */
+        flex-direction: row;
+        width: 80%;
+        gap: 2rem;
+    }
+    .presentation-img{
+        width: 100%;
+    }
+}
+
 
 
 
