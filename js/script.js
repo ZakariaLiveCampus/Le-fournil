@@ -4,6 +4,7 @@ const mobileButton = document.getElementById("mobile-button");
 const mainNav = document.getElementById("main-nav");
 
 const mobileIcon = document.getElementById("mobile-icon");
+const heroBanner = document.getElementById("hero-banner");
 
 function toggleBurger() {
     if (mobileIcon.classList.contains("fa-bars")) {
