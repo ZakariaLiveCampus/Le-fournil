@@ -1,11 +1,11 @@
-// Mobile menu 
+// Get elements
 const mobileButton = document.getElementById("mobile-button");
-
 const mainNav = document.getElementById("main-nav");
-
 const mobileIcon = document.getElementById("mobile-icon");
 const heroBanner = document.getElementById("hero-banner");
+const submitButton = document.getElementById("submit");
 
+// Mobile menu 
 function toggleBurger() {
     if (mobileIcon.classList.contains("fa-bars")) {
         mobileIcon.classList.replace("fa-bars", "fa-chevron-up");
@@ -35,4 +35,9 @@ mainNav.addEventListener("click", function(event) {
 
 window.addEventListener("resize", function(event) {
     if (window.innerWidth >= 768) resetNav();
+})
+
+// Form
+submitButton.addEventListener("click", function(event){
+    event.preventDefault();
 })
